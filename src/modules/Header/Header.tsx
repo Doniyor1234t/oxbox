@@ -36,7 +36,7 @@ const Header = () => {
             <button className={cls.langBtn} aria-describedby={id} type="button" onClick={handleClick}>
               <LanguageIcon />
             </button>
-            <Popper placement={'bottom-start'} id={id} open={open} anchorEl={anchorEl}>
+            <Popper sx={{zIndex:10}} placement={'bottom-start'} id={id} open={open} anchorEl={anchorEl}>
               <Box sx={{width:220, border:'1px solid rgba(68, 83, 113, 0.15)', borderRadius:'20px',p: '8px 0', bgcolor: 'background.default' }}>
                 <MenuItem sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Uzb /> O’zbekcha</MenuItem>
                 <MenuItem sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Ru />Русский</MenuItem>

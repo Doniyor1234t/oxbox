@@ -1,0 +1,53 @@
+.body {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.boxImg {
+
+  // flex: 0 0 50%;
+
+  img {
+    // height: 100%;
+    // width: 100%;
+    // display: block;
+  }
+}
+
+.content {
+  border-radius: 30px;
+  // flex: 0 0 50%;
+}
+
+.topContent {
+  padding: 40px;
+  border-radius: 30px;
+}
+
+.bottomContent {
+  padding: 40px;
+  border-radius: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bottBox {
+  display: flex;
+  gap: 12px;
+  flex: 1 0 0;
+
+  svg {
+    min-height: 20px;
+    min-width: 20px;
+    display: block;
+  }
+}
