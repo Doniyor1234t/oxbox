@@ -5,7 +5,7 @@ import Phones from "assets/Imgs/Mockup.png";
 
 const AppView = () => {
   return (
-    <section>
+    <section className={cls.appView}>
       <Container>
         <Box className={cls.body}>
           <Box className={cls.box}>

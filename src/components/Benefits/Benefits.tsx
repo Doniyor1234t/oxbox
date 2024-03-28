@@ -4,7 +4,7 @@ import benDb from "./BenDb";
 
 const Benefits = () => {
   return (
-    <section>
+    <section id="benefits">
       <Container>
         <Box sx={{backgroundColor:'background.paper'}} className={cls.body}>
           <Typography variant="h2" >Преимущества</Typography>

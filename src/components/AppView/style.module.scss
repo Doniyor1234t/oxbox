@@ -1,9 +1,24 @@
+.appView {
+  overflow: hidden;
+}
+
 .body {
   background: #F43F5E;
   padding: 40px;
   border-radius: 30px;
   position: relative;
   overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -81px;
+    right: -93px;
+    width: 889.936px;
+    height: 678.722px;
+    background: url('../../assets/backgr/gb.svg') no-repeat;
+    z-index: 1;
+  }
 }
 
 .box {
@@ -17,10 +32,10 @@
 
 .images {
   position: absolute;
-  top: 20px;
-  right: -202px;
+  top: -10px;
+  right: -280px;
   width: 1037px;
-  z-index: 1;
+  z-index: 5;
 
   img {
     width: 100%;

@@ -5,7 +5,7 @@ import faqDb from "./faqDb";
 
 const Faqs = () => {
   return (
-    <section>
+    <section id="faqs">
       <Container>
         <Typography sx={{marginBottom:'40px'}} variant="h2">Часто задаваемые вопросы</Typography>
         <Box className={cls.box}>

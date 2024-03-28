@@ -6,7 +6,7 @@ import processDb from "./processDb";
 
 const Process = () => {
   return (
-    <section>
+    <section id="process">
       <Container>
         <Box className={cls.body}>
           <Box className={cls.left} sx={{background:'#FF255F', color:'#fff'}}>

@@ -5,7 +5,6 @@ import {Icon3} from "assets/Icons/Benefits/3";
 import {Icon4} from "assets/Icons/Benefits/4";
 import {Icon5} from "assets/Icons/Benefits/5";
 import {Icon6} from "assets/Icons/Benefits/6";
-console.log(Icon2);
 
 const benDb = [
   {

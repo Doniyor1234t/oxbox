@@ -41,6 +41,17 @@ function getTheme(mode: PaletteMode): ThemeOptions {
   return {
     ...getDesignTokens(mode),
     components: {
+      MuiMenuItem: {
+        styleOverrides: {
+          root: {
+            borderRadius:'24px',
+            padding:0,
+            '&:hover': {
+              backgroundColor: '#F4F5F9',
+            },
+          },
+        },
+      },
       MuiAccordion: {
         defaultProps: {
           elevation: 0,
@@ -261,7 +272,7 @@ declare module '@mui/material/Button' {
   }
 }
 declare module '@mui/material/Typography' {
-  interface TypographyPropsColorOverrides {
+  interface TypographyPropsVariantOverride {
     text: true;
   }
 }

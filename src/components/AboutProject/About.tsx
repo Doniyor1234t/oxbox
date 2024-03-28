@@ -7,7 +7,7 @@ import { Arrowrightup } from "assets/Icons/AngleArrow";
 
 const About = () => {
   return (
-    <section>
+    <section id="opportunities" className={cls.opportunities}>
       <Container>
         <Box className={cls.body}>
           <Box className={cls.boxImg}>

@@ -1,7 +1,7 @@
 .main {
 
-  overflow-x: hidden;
-  overflow-y: visible;
+  // overflow-y: hidden;
+  position: relative;
 }
 
 .body {
@@ -49,24 +49,40 @@
     position: absolute;
     top: 15px;
 
+
+    right: 50px;
+    width: 277.713px;
+    height: 570px;
+    transform: rotate(10deg);
+    // box-shadow: 20.386px 32.618px 122.318px 0px rgba(0, 0, 0, 0.10);
+    filter: drop-shadow(20.386px 32.618px 122.318px rgba(0, 0, 0, 0.10));
+    z-index: 1;
+
     &:nth-child(1) {
-      left: 50px;
+      right: 35px;
       width: 277.713px;
       height: 570px;
-      transform: rotate(-10deg);
-      // box-shadow: 20.386px 32.618px 122.318px 0px rgba(0, 0, 0, 0.10);
-      filter: drop-shadow(20.386px 32.618px 122.318px rgba(0, 0, 0, 0.10));
-      z-index: 2;
     }
 
-    &:nth-child(2) {
-      right: 50px;
-      width: 277.713px;
-      height: 570px;
-      transform: rotate(10deg);
-      // box-shadow: 20.386px 32.618px 122.318px 0px rgba(0, 0, 0, 0.10);
-      filter: drop-shadow(20.386px 32.618px 122.318px rgba(0, 0, 0, 0.10));
-      z-index: 1;
-    }
+    &:nth-child(2) {}
+  }
+}
+
+
+.moveImg {
+  position: absolute;
+  width: 277.713px;
+  height: 570px;
+  z-index: 100;
+  top: 165px;
+  left: 786px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    // transform: rotate(-10deg);
+    // box-shadow: 20.386px 32.618px 122.318px 0px rgba(0, 0, 0, 0.10);
+    filter: drop-shadow(20.386px 32.618px 122.318px rgba(0, 0, 0, 0.10));
+    z-index: 2;
   }
 }
