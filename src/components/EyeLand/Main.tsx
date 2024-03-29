@@ -7,6 +7,7 @@ import DoubleApp from "src/assets/Imgs/iPhone.png";
 import { useEffect, useRef } from "react";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+console.log(ScrollTrigger.matchMedia);
 
 const MainLand = () => {
   
@@ -14,21 +15,30 @@ const MainLand = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     console.log(imgRef.current);
+    gsap.from(imgRef.current, {
+      x: 0,
+      rotate: 10,
+      scale: 1,
+    })
     gsap.to(imgRef.current, {
-      x: -400,
-      y: 1000,
-      rotation: 360,
+      x: -794,
+      rotate: 0,
+      scale: 1.1,
       scrollTrigger: {
         trigger: imgRef.current,
-        start: "top 10px",
-        end: "500px 10px",
+        start: "top-=135 10px",
+        end: "721px 10px",
         scrub: true,
-        // pin: true,
-        markers: true,
+        pin: true,
+        // markers: true,
         id: "scrub"
       }
     });
-
+    return () => {
+      
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+    
   }, [])
   
     return (
@@ -44,7 +54,7 @@ const MainLand = () => {
             maxWidth:'650px',
             position:'relative',
             zIndex:'-1'
-          }}>
+          }} >
           <Box sx={{display:'flex',flexDirection:'column', gap:'24px'}}>
             <Typography variant="h1" component="h1">Ваше мнение - ваш заработок с нами!</Typography>
             <Typography variant="text">Присоединяйтесь к нашему онлайн-сообществу и начните зарабатывать уже сегодня!</Typography>
@@ -64,12 +74,13 @@ const MainLand = () => {
           </Button>
           </Box>
           <Box className={cls.img}>
+            <img src={DoubleApp1} alt="" />
             <img src={DoubleApp} alt="" />
           </Box>
+          <div ref={imgRef} className={cls.moveImg}>
+            <img src={DoubleApp1} alt="" />
+          </div>
         </Container>
-        <div ref={imgRef} className={cls.moveImg}>
-          <img src={DoubleApp1} alt="" />
-        </div>
       </section>
     )
 }

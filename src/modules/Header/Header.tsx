@@ -97,7 +97,18 @@ const Header = () => {
           <Link sx={{p:0}} href="/" className={cls.logo}>
             <Logo />
           </Link>
-          <Box sx={{ overflow:'hidden',position:'relative', display: 'flex', padding:'4px', borderRadius:'28px', height:'56px', backgroundColor:'background.default' }}>
+          <Box className={cls.menu} sx={{ 
+            overflow:'hidden',
+            position:'relative', 
+            display: 'flex', 
+            padding:'4px', 
+            borderRadius:'28px', 
+            height:'56px', 
+            backgroundColor:'background.default',
+            '@media (max-width: 768px)': {
+              display:'none'
+            }
+          }}>
             <span className={cls.activeBg}></span>
             {sections.map((section, index) => (
               <MenuItem key={index} className={`${cls.menuItem} ${selectedSection === section.id ? cls.active : ''}`}>
@@ -111,7 +122,7 @@ const Header = () => {
             <Button variant='l' sx={{background:'#fff', color:'#222A39', '&:hover':{background:'#F4F5F9', outline:'none'}}} className={cls.langBtn} aria-describedby={id} type="button" onClick={handleClick}>
               <LanguageIcon />
             </Button>
-            <Popper sx={{zIndex:10, }} placement={'bottom-start'} id={id} open={open} anchorEl={anchorEl}>
+            <Popper sx={{zIndex:100, }} placement={'bottom-start'} id={id} open={open} anchorEl={anchorEl}>
               <Box sx={{width:220, marginTop:'10px', border:'1px solid rgba(68, 83, 113, 0.15)', borderRadius:'20px',p: '8px 0', bgcolor: 'background.default' }}>
                 <MenuItem sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Uzb /> O’zbekcha</MenuItem>
                 <MenuItem sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Ru />Русский</MenuItem>
@@ -120,7 +131,13 @@ const Header = () => {
               </Box>
             </Popper>
             </Box>
-            <Button variant="l" color="primary" endIcon={<ArrowForwardIcon/>}>Войти </Button>
+            <Button xs={{
+              // display:'none',
+              '@media (max-width: 768px)': {
+                display:'none'
+              }
+            
+            }} variant="l" endIcon={<ArrowForwardIcon/>}>Войти </Button>
           </Box>
         </Box>
       </Container>

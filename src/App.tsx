@@ -26,7 +26,7 @@ function App() {
           <CssBaseline />
           <Header />
           <RouterProvider router={root} />
-          <Footer />
+          {/* <Footer /> */}
         </ThemeProvider>
       </div>
       </ReactLenis>

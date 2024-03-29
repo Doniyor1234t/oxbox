@@ -10,11 +10,11 @@ export const Main = () => {
   return (
     <main className={cls.main}>
       <MainLand />
-      <About />
+      {/* <About />
       <Process />
       <Benefits />
       <Faqs />
-      <AppView />
+      <AppView /> */}
     </main>
   )
 };

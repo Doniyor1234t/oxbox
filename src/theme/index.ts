@@ -39,6 +39,12 @@ const getDesignTokens = (mode:PaletteMode) => ({
 
 function getTheme(mode: PaletteMode): ThemeOptions {
   return {
+    breakpoints: {
+      values: {
+        df:1440,
+        mb:768,
+      },
+    },
     ...getDesignTokens(mode),
     components: {
       MuiMenuItem: {
@@ -203,9 +209,15 @@ function getTheme(mode: PaletteMode): ThemeOptions {
         defaultProps: {
           disableRipple: true,
         },
-        variants:[
+        variants: [
           {
-            props: {variant: 'l', color: 'primary'},
+            props: {
+              variant: 'l', 
+              color: 'primary',
+              // [theme.breakpoints.up('df')]: {
+              //   padding: '12px 20px',
+              // },
+          },
             style: {
               borderRadius: 14,
               fontSize: 14,
@@ -274,6 +286,12 @@ declare module '@mui/material/Button' {
 declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverride {
     text: true;
+  }
+}
+declare module '@mui/material/styles' {
+  interface BreakpointOverrides {
+    df: true;
+    mb: true; // adds the `mobile` breakpoint
   }
 }
 

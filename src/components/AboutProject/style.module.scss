@@ -1,6 +1,6 @@
 .opportunities {
-  position: relative;
-  z-index: 10;
+  // position: relative;
+  // z-index: 1;
 }
 
 .body {
@@ -14,6 +14,8 @@
 .boxImg {
 
   // flex: 0 0 50%;
+  position: relative;
+  z-index: -1;
 
   img {
     // height: 100%;
