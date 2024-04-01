@@ -9,6 +9,11 @@
   gap: 40px;
   width: 100%;
   justify-content: space-between;
+
+  @media (width < 768px) {
+    flex-direction: column;
+    gap: 0px;
+  }
 }
 
 .boxImg {
@@ -16,6 +21,18 @@
   // flex: 0 0 50%;
   position: relative;
   z-index: -1;
+
+  @media (width < 768px) {
+    // width: 110%;
+    margin: 0 -16px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      // display: block;
+    }
+  }
+
 
   img {
     // height: 100%;
@@ -27,6 +44,8 @@
 .content {
   border-radius: 30px;
   // flex: 0 0 50%;
+  position: relative;
+  z-index: 3;
 }
 
 .topContent {

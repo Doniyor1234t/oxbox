@@ -1,6 +1,7 @@
 import { ClassSharp } from "@mui/icons-material";
 import { Box, Button, Container, Typography } from "@mui/material";
 import aboutImg from "assets/Imgs/About.png";
+import bgPhone from "assets/Imgs/bgPhone.png";
 import cls from "./style.module.scss";
 import { Thunder } from "assets/Icons/Thunder";
 import { Arrowrightup } from "assets/Icons/AngleArrow";
@@ -12,6 +13,7 @@ const About = () => {
         <Box className={cls.body}>
           <Box className={cls.boxImg}>
             <img src={aboutImg} alt="" />
+            {/* <img src={bgPhone} alt="" /> */}
           </Box>
           <Box sx={{backgroundColor:'background.paper2'}} className={cls.content}>
             <Box sx={{backgroundColor:'background.paper'}} className={cls.topContent}>

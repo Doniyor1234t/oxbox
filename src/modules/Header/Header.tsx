@@ -93,7 +93,15 @@ const Header = () => {
   return (
     <header className={cls.header}>
       <Container>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', margin:'6px 0' }}>
+        <Box sx={{ 
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          margin:'6px 0',
+          '@media (max-width: 768px)': {
+            margin:'12px 0'
+          }
+        }}>
           <Link sx={{p:0}} href="/" className={cls.logo}>
             <Logo />
           </Link>
@@ -131,13 +139,7 @@ const Header = () => {
               </Box>
             </Popper>
             </Box>
-            <Button xs={{
-              // display:'none',
-              '@media (max-width: 768px)': {
-                display:'none'
-              }
-            
-            }} variant="l" endIcon={<ArrowForwardIcon/>}>Войти </Button>
+            <Button sx={{}} variant="l" endIcon={<ArrowForwardIcon/>}>Войти </Button>
           </Box>
         </Box>
       </Container>

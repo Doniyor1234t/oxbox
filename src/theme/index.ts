@@ -147,6 +147,10 @@ function getTheme(mode: PaletteMode): ThemeOptions {
             fontSize: 56,
             fontWeight: 600,
             lineHeight: "125%",
+            '@media (max-width: 768px)': {
+              fontSize:44,
+              lineHeight: "122%",
+            },
           },
           h2: {
             fontSize: 44,
@@ -174,6 +178,10 @@ function getTheme(mode: PaletteMode): ThemeOptions {
             fontSize: 18,
             fontWeight: 400,
             lineHeight: "145%",
+            '@media (max-width: 768px)': {
+              fontSize:16,
+              lineHeight: "150%",
+            },
           }
         },
       },
@@ -188,6 +196,10 @@ function getTheme(mode: PaletteMode): ThemeOptions {
             fontWeight: 600,
             lineHeight: '125%',
             padding: '20px 32px',
+            '@media (max-width: 768px)': {
+              padding:'18px 24px',
+              fontSize:14
+            },
             borderRadius: 16,
             '&:hover': {
               backgroundColor: '#303A4F',
@@ -224,6 +236,10 @@ function getTheme(mode: PaletteMode): ThemeOptions {
               fontWeight: 600,
               lineHeight: '130%',
               padding: '18px 24px',
+              '@media (max-width: 768px)': {
+                padding:'12px 20px',
+                fontSize:'14px'
+              }
             },
           },
           {
