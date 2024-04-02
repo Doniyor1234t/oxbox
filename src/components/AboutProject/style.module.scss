@@ -29,12 +29,33 @@
     img {
       height: 100%;
       width: 100%;
+
       // display: block;
+      &:last-child {
+        display: block;
+      }
+
+      &:first-child {
+        display: none;
+      }
     }
+
   }
 
 
+
   img {
+    @media (width > 768px) {
+      &:first-child {
+        // display: block;
+      }
+
+      &:last-child {
+        display: none;
+      }
+    }
+
+
     // height: 100%;
     // width: 100%;
     // display: block;
@@ -51,6 +72,10 @@
 .topContent {
   padding: 40px;
   border-radius: 30px;
+
+  @media (width < 768px) {
+    padding: 20px;
+  }
 }
 
 .bottomContent {
@@ -58,6 +83,11 @@
   border-radius: 30px;
   display: flex;
   gap: 20px;
+
+  @media (width < 768px) {
+    padding: 20px;
+    flex-direction: column;
+  }
 }
 
 .textBox {

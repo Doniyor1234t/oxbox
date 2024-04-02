@@ -2,6 +2,11 @@
   display: flex;
   gap: 40px;
   position: relative;
+
+  @media (width < 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .left {
@@ -14,6 +19,13 @@
   padding: 40px;
   position: sticky;
   top: 100px;
+
+  @media (width < 768px) {
+    top: -100px;
+    position: sticky;
+    padding: 20px;
+    min-height: 380px;
+  }
 }
 
 .btns {
@@ -24,6 +36,11 @@
   button {
     flex: 1 0 0;
   }
+
+  @media (width < 768px) {
+    flex-direction: column;
+    margin-top: auto;
+  }
 }
 
 .right {
@@ -31,6 +48,10 @@
   flex-direction: column;
   gap: 20px;
   flex: 1 1 50%;
+
+  @media (width < 768px) {
+    gap: 16px;
+  }
 }
 
 .item {
@@ -42,6 +63,43 @@
   background: #fff;
   position: relative;
   height: 320px;
+
+  @media (width < 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    position: sticky;
+    top: 300px;
+    // box-shadow: 0px -4px 40px rgba(0, 0, 0, 0.25);
+
+    // &:nth-child(1) {
+    //   top: 100px;
+    // }
+
+    // &:nth-child(2) {
+    //   top: 120px;
+    // }
+
+    // &:nth-child(3) {
+    //   top: 140px;
+    // }
+
+    // &:nth-child(4) {
+    //   top: 160px;
+    // }
+
+    // &:nth-child(5) {
+    //   top: 180px;
+    // }
+
+    // &:nth-child(6) {
+    //   top: 200px;
+    // }
+
+    // &:nth-child(7) {
+    //   top: 220px;
+    // }
+  }
 }
 
 .img {
@@ -58,6 +116,14 @@
     height: 100%;
     display: block;
   }
+
+  @media (width < 768px) {
+    width: 159px;
+    height: 159px;
+    position: relative;
+    order: 1;
+    margin: 0 auto;
+  }
 }
 
 .content {
@@ -67,4 +133,10 @@
   justify-content: space-between;
   position: relative;
   z-index: 10;
+
+  @media (width < 768px) {
+    order: 2;
+    width: auto;
+    height: 114px;
+  }
 }

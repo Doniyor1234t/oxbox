@@ -69,13 +69,24 @@ function getTheme(mode: PaletteMode): ThemeOptions {
             overflow: 'clip',
             backgroundColor: 'background.paper',
             border:'none',
+            '@media (max-width: 768px)': {
+              padding: 16,
+            },
             '&:first-of-type': {
               borderTopLeftRadius: 30,
               borderTopRightRadius: 30,
+              '@media (max-width: 768px)': {
+                borderTopLeftRadius: 20,
+                borderTopRightRadius: 20,
+              },
             },
             '&:last-of-type': {
               borderBottomLeftRadius: 30,
               borderBottomRightRadius: 30,
+              '@media (max-width: 768px)': {
+                borderBottomLeftRadius: 20,
+                borderBottomRightRadius: 20,
+              },
             },
             ...(theme.palette.mode === 'dark' && {
               // backgroundColor: gray[900],
@@ -113,6 +124,10 @@ function getTheme(mode: PaletteMode): ThemeOptions {
             padding: 20, 
             marginTop: 16,
             borderRadius: 12,
+            '@media (max-width: 768px)': {
+              padding: 16,
+              marginTop: 12,
+            },
           },
         },
       },
@@ -138,7 +153,7 @@ function getTheme(mode: PaletteMode): ThemeOptions {
         },
         styleOverrides: {
           root: {
-            fontFamily: "Semibold, sans-serif",
+            fontFamily: "Manrope, sans-serif",
             fontSize: 18,
             fontWeight: 400,
             lineHeight: '145%',
@@ -156,11 +171,19 @@ function getTheme(mode: PaletteMode): ThemeOptions {
             fontSize: 44,
             fontWeight: 600,
             lineHeight: "125%",
+            '@media (max-width: 768px)': {
+              fontSize:26,
+              lineHeight: "130%",
+            },
           },
           h3: {
             fontSize: 32,
             fontWeight: 600,
             lineHeight: "130%",
+            '@media (max-width: 768px)': {
+              fontSize:22,
+              lineHeight: "125%",
+            },
           },
           h6:{
             fontSize: 18,
@@ -191,7 +214,7 @@ function getTheme(mode: PaletteMode): ThemeOptions {
             backgroundColor: "#222A39",
             color: "#FFF",
             textTransform: "none",
-            fontFamily: "Semibold, sans-serif",
+            fontFamily: "Manrope, sans-serif",
             fontSize: 16,
             fontWeight: 600,
             lineHeight: '125%',
@@ -250,6 +273,10 @@ function getTheme(mode: PaletteMode): ThemeOptions {
               fontWeight: 600,
               lineHeight: '130%',
               padding: '12px 20px',
+              '@media (max-width: 768px)': {
+                padding:'12px 7px',
+                width:'100%',
+              },
             },
           },
           {
@@ -274,7 +301,7 @@ function getTheme(mode: PaletteMode): ThemeOptions {
         styleOverrides: {
           root: ({theme}) => ({
             textDecoration: 'none',
-            fontFamily: "Semibold, sans-serif",
+            fontFamily: "Manrope, sans-serif",
             fontSize: 16,
             fontWeight: 400,
             lineHeight: "150%",

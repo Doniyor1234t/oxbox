@@ -1,5 +1,5 @@
 
-export const Eng = (props) => (
+export const Eng = () => (
   <svg height="24" width="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <rect height="17.1429" width="24" fill="white" rx="2" y="3.42999"/>
     <mask height="18" id="mask0_2296_1560" style={{"maskType":"luminance"}} width="24" x="0" y="3" maskUnits="userSpaceOnUse">

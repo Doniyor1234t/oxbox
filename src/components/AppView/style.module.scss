@@ -16,8 +16,23 @@
     right: -93px;
     width: 889.936px;
     height: 678.722px;
-    background: url('../../assets/backgr/gb.svg') no-repeat;
+    background: url('../../assets/backgr/gb.svg') 0 0/contain no-repeat;
     z-index: 1;
+
+    @media (width < 768px) {
+      width: 518.5px;
+      height: 373px;
+      top: 300px;
+      right: -131px;
+    }
+  }
+
+  @media (width < 768px) {
+    padding: 20px;
+    height: 864px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -28,6 +43,11 @@
   width: 616px;
   position: relative;
   z-index: 10;
+
+  @media (width < 768px) {
+    width: auto;
+    gap: 12px;
+  }
 }
 
 .images {
@@ -36,6 +56,13 @@
   right: -280px;
   width: 1037px;
   z-index: 5;
+
+  @media (width < 768px) {
+    width: 518.5px;
+    // height: 373px;
+    top: 350px;
+    right: -131px;
+  }
 
   img {
     width: 100%;

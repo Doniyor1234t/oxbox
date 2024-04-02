@@ -9,12 +9,24 @@
   flex-direction: column;
   gap: 40px;
   margin-bottom: 60px;
+
+  @media (width < 768px) {
+    padding: 20px;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
 }
 
 .box {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (width < 768px) {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
 }
 
 .logo {
@@ -30,6 +42,12 @@
 .infos {
   display: flex;
   gap: 40px;
+
+  @media (width < 768px) {
+    gap: 16px;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .menu {
@@ -40,6 +58,12 @@
   gap: 8px;
   width: 192px;
   margin: 0;
+
+  @media (width < 768px) {
+    gap: 8px;
+    width: auto;
+    flex: 1 1 50%;
+  }
 }
 
 .manuItem {
@@ -64,15 +88,30 @@
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
+
+    @media (width < 768px) {
+      font-size: 16px;
+      word-break: break-all;
+    }
+  }
+
+  @media (width < 768px) {
+    gap: 8px;
   }
 }
 
 .apps {
   display: flex;
   gap: 20px;
+
 }
 
 .app {
+  @media (width < 768px) {
+    padding: 16px;
+    flex: 1 1 50%;
+  }
+
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -80,5 +119,9 @@
   justify-content: center;
   padding: 20px;
   border-radius: 20px;
+
+  @media (width < 768px) {
+    text-wrap: wrap;
+  }
 
 }

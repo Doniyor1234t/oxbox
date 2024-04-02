@@ -1,6 +1,6 @@
 
 
-export const Kz = (props) => (
+export const Kz = () => (
   <svg height="24" width="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 5.42999C0 4.32542 0.895431 3.42999 2 3.42999H22C23.1046 3.42999 24 4.32542 24 5.42999V18.5729C24 19.6774 23.1046 20.5728 22 20.5728H2C0.89543 20.5728 0 19.6774 0 18.5728V5.42999Z" fill="white"/>
     <mask height="18" id="mask0_2296_1595" style={{"maskType":"luminance"}} width="24" x="0" y="3" maskUnits="userSpaceOnUse">

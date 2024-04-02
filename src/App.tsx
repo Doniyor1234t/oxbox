@@ -6,8 +6,9 @@ import {theme} from './theme'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Main } from './routes/Main'
 import { CssBaseline } from '@mui/material'
-import { useEffect, useRef } from 'react'
 import ReactLenis from '@studio-freight/react-lenis'
+import "./i18next";
+
 const root = createBrowserRouter([
   {
     path: '/',
@@ -16,7 +17,7 @@ const root = createBrowserRouter([
 ])
 
 function App() {
-  const lenisRef = useRef()
+  // const lenisRef = useRef()
   
   return (
     <>
@@ -26,7 +27,7 @@ function App() {
           <CssBaseline />
           <Header />
           <RouterProvider router={root} />
-          {/* <Footer /> */}
+          <Footer />
         </ThemeProvider>
       </div>
       </ReactLenis>

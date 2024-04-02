@@ -1,16 +1,19 @@
-import { Box, Button, Container, Link, MenuItem, Popper, Typography } from '@mui/material'
+import { Box, Button, Container, Link, MenuItem, Popper } from '@mui/material'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Logo from 'src/assets/Icons/Logo';
 import cls from './style.module.scss';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect,  useState } from 'react';
 import LanguageIcon from '@mui/icons-material/Language';
 import { Uzb } from 'src/assets/Icons/Uzb';
 import { Ru } from 'src/assets/Icons/Ru';
 import { Eng } from 'src/assets/Icons/Eng';
 import { Kz } from 'src/assets/Icons/Kz';
 import gsap from 'gsap';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { t, i18n } = useTranslation("translation");
+
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [allowScrollHandling, setAllowScrollHandling] = useState(true);
 
@@ -82,10 +85,10 @@ const Header = () => {
     };
   }, [selectedSection, allowScrollHandling]);
   const sections = [
-    { id: 'opportunities', label: 'Возможности' },
-    { id: 'process', label: 'Этапы' },
-    { id: 'benefits', label: 'Преимущества' },
-    { id: 'faqs', label: 'Частые вопросы' },
+    { id: 'opportunities', label: t('header.navbar.opportunities') },
+    { id: 'process', label: t('header.navbar.process') },
+    { id: 'benefits', label: t('header.navbar.benefits') },
+    { id: 'faqs', label: t('header.navbar.faqs') },
   ];
   
   const open = Boolean(anchorEl);
@@ -120,7 +123,7 @@ const Header = () => {
             <span className={cls.activeBg}></span>
             {sections.map((section, index) => (
               <MenuItem key={index} className={`${cls.menuItem} ${selectedSection === section.id ? cls.active : ''}`}>
-                <Link onClick={(e) => scrollToSection(section.id,e)}>{section.label}</Link>
+                <Link onClick={(e) => scrollToSection(section.id, e)}>{section.label}</Link>
               </MenuItem>
             ))}
 
@@ -139,7 +142,7 @@ const Header = () => {
               </Box>
             </Popper>
             </Box>
-            <Button sx={{}} variant="l" endIcon={<ArrowForwardIcon/>}>Войти </Button>
+            <Button variant="l" endIcon={<ArrowForwardIcon/>}>{t('header.navbar.login')} </Button>
           </Box>
         </Box>
       </Container>

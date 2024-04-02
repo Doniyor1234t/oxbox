@@ -16,10 +16,10 @@ const Footer = () => {
             </Link>
             <Box className={cls.infos}>
               <ul className={cls.menu}>
-                <li className={cls.menuItem}><Link sx={{p:0}} href='#'>Возможности</Link></li>
-                <li className={cls.menuItem}><Link sx={{p:0}} href='#'>Этапы</Link></li>
-                <li className={cls.menuItem}><Link sx={{p:0}} href='#'>Преимущества</Link></li>
-                <li className={cls.menuItem}><Link sx={{p:0}} href='#'>Частые вопросы</Link></li>
+                <li className={cls.menuItem}><Link sx={{p:0}} href='#opportunities'>Возможности</Link></li>
+                <li className={cls.menuItem}><Link sx={{p:0}} href='#process'>Этапы</Link></li>
+                <li className={cls.menuItem}><Link sx={{p:0}} href='#benefits'>Преимущества</Link></li>
+                <li className={cls.menuItem}><Link sx={{p:0}} href='#faqs'>Частые вопросы</Link></li>
               </ul>
               <div className={cls.contacts}>
                 <div className={cls.contact}>
@@ -45,7 +45,7 @@ const Footer = () => {
           </Box>
           <Box className={cls.box}>
             <Typography sx={{fontSize:'14px',fontWeight:'400',color:'#858FA3'}}>© 2024. SpeakOut All Rights Reserved.</Typography>
-            <Link href=''>
+            <Link sx={{p:0}} href=''>
             <Typography sx={{fontSize:'14px',fontWeight:'400',color:'#858FA3'}}>Политика конфиденциальности</Typography>
             </Link>
           </Box>
