@@ -4,12 +4,18 @@ import Logo from 'src/assets/Icons/Logo';
 import cls from './style.module.scss';
 import React, { useEffect,  useState } from 'react';
 import LanguageIcon from '@mui/icons-material/Language';
-import { Uzb } from 'src/assets/Icons/Uzb';
 import { Ru } from 'src/assets/Icons/Ru';
+import { Uzb } from 'src/assets/Icons/Uzb';
 import { Eng } from 'src/assets/Icons/Eng';
 import { Kz } from 'src/assets/Icons/Kz';
 import gsap from 'gsap';
 import { useTranslation } from 'react-i18next';
+
+// const lngs = {
+//   en: { nativeName: "English" },
+//   ru: { nativeName: "Русский" },
+// };
+
 
 const Header = () => {
   const { t, i18n } = useTranslation("translation");
@@ -19,6 +25,9 @@ const Header = () => {
 
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(anchorEl ? null : event.currentTarget);
+    
+    i18n.changeLanguage(event.currentTarget.id)
+    console.log(i18n);
   };
     const [selectedSection, setSelectedSection] = useState('opportunities');
     
@@ -29,23 +38,23 @@ const Header = () => {
       setAllowScrollHandling(false);
       
       
-      const targeted = document.getElementById(selectedSection);
+      const targeted = document.getElementById(selectedSection) as HTMLElement;
 
       if (targetElement) {
-        targeted.parentElement.classList.remove(cls.active)
-        targeted.parentElement.classList.add(cls.active)
-        const endPosition = targetElement.offsetTop  - 100;
-        let scrollProxy = { y: window.scrollY};
-        
+        if (targeted.parentElement) {
+          targeted.parentElement.classList.remove(cls.active);
+          targeted.parentElement.classList.add(cls.active);
+        }
+        const endPosition = targetElement.offsetTop - 100;
+        let scrollProxy = { y: window.scrollY };
 
         gsap.to(scrollProxy, {
           y: endPosition,
           duration: 0.5,
-          ease: "power1.inOut", 
-          onUpdate: () => window.scrollTo(0, scrollProxy.y ),
+          ease: "power1.inOut",
+          onUpdate: () => window.scrollTo(0, scrollProxy.y),
           onComplete: () => setAllowScrollHandling(true)
         });
-
       }
     };
   
@@ -74,8 +83,8 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const activeBg = document.querySelector(`.${cls.activeBg}`);
-    const actived = document.querySelector(`.${cls.active}`);
+    const activeBg = document.querySelector(`.${cls.activeBg}`) as HTMLElement;
+    const actived = document.querySelector(`.${cls.active}`) as HTMLElement;
     
     activeBg.style.left = `${actived.offsetLeft}px`;
     activeBg.style.width = `${actived.offsetWidth}px`;
@@ -135,10 +144,10 @@ const Header = () => {
             </Button>
             <Popper sx={{zIndex:100, }} placement={'bottom-start'} id={id} open={open} anchorEl={anchorEl}>
               <Box sx={{width:220, marginTop:'10px', border:'1px solid rgba(68, 83, 113, 0.15)', borderRadius:'20px',p: '8px 0', bgcolor: 'background.default' }}>
-                <MenuItem sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Uzb /> O’zbekcha</MenuItem>
-                <MenuItem sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Ru />Русский</MenuItem>
-                <MenuItem sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Eng/>English</MenuItem>
-                <MenuItem sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Kz/>Қазақша</MenuItem>
+                <MenuItem id='uz' sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Uzb /> O’zbekcha</MenuItem>
+                <MenuItem id='ru' sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Ru />Русский</MenuItem>
+                <MenuItem id='en' sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Eng/>English</MenuItem>
+                <MenuItem id='kz' sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Kz/>Қазақша</MenuItem>
               </Box>
             </Popper>
             </Box>

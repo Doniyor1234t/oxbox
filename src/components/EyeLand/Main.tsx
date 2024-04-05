@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 
 const MainLand = () => {
   
-  const { t, i18n } = useTranslation("translation");
+  const { t } = useTranslation("translation");
 
 
   const imgRef = useRef<HTMLDivElement>(null);
@@ -73,7 +73,7 @@ const MainLand = () => {
             }
           }}>
             <Typography variant="h1" component="h1">{t('Main.title')}</Typography>
-            <Typography variant="text">{t('Main.subtitle')}</Typography>
+            <Typography variant="p">{t('Main.subtitle')}</Typography>
           </Box>
           <Button color="primary" endIcon={<Arrowrightup />}>{t('Main.button')}</Button>
           <Button  sx={{ 

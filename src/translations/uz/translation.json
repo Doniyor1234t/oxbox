@@ -1,96 +1,118 @@
 {
   "header":{
     "navbar":{
-      "opportunities":"Возможности",
-      "process":"Этапы",
-      "benefits":"Преимущества",
-      "faqs":"Частые вопросы",
-      "login":"Войти"
+      "opportunities":"Imkoniyatlar",
+      "process":"Afzalliklari",
+      "benefits":"Bosqichlar",
+      "faqs":"Savollar",
+      "login":"Kirish"
     }
   },
   "Main":{
-    "title":"Ваше мнение - ваш заработок с нами!",
-    "subtitle":"Присоединяйтесь к нашему онлайн-сообществу и начните зарабатывать уже сегодня!",
-    "button":"Начать",
-    "download":"Скачать SpeakOut"
+    "title":"Sizning fikringiz-biz bilan daromadingiz!",
+    "subtitle":"Bizning onlayn hamjamiyatimizga qo'shiling va bugun pul ishlashni boshlang!",
+    "button":"Boshlash",
+    "download":"SpeakOut ni yuklab olisht"
   },
   "About":{
-    "title":"О проекте",
-    "subtitle":"SpeakOut предлагает вам уникальную возможность превратить ваше мнение в реальные деньги. Проходите опросы, делитесь своими мыслями и получайте вознаграждение за каждый ответ. ",
+    "title":"Loyiha haqida",
+    "subtitle":"SpeakOut sizga fikringizni haqiqiy pulga aylantirish uchun noyob imkoniyatni taqdim etadi. So'rovlardan o'ting, fikrlaringiz bilan o'rtoqlashing va har bir javob uchun mukofot oling.",
     "button":"Начать",
-    "opportunities":[
-      {
-        "title":"Цели проекта:",
-        "subtitle":"Вклад в развитие продуктов и услуг с помощью мнений пользователей."
+    "opportunities":{
+      "1":{
+        "title":"Loyihaning maqsadlari:",
+        "subtitle":"Foydalanuvchi fikrlari orqali mahsulot va xizmatlarni rivojlantirishga qo'shgan hissasi."
       },
-      {
-        "title":"Наша миссия:",
-        "subtitle":"Обеспечить каждому возможность заработку"
+      "2":{
+        "title":"Bizning vazifamiz:",
+        "subtitle":"Har kimga daromad olish imkoniyatini beringу"
       }
-    ]
+    }
   },
   "process":{
-    "title":"Как это работает",
-    "subtitle":"Не упустите возможность улучшить свое финансовое положение, уделяя всего несколько минут в день. Зарегистрируйтесь сейчас и начните получать за свое мнение!",
-    "list":[
-      {
-        "title":"Регистрируйтесь на сайте",
-        "description":"После регистрации вы получите разминочные опросы и заработаете 8000 UZS"
+    "title":"Bu qanday ishlaydi",
+    "subtitle":"Kuniga atigi bir necha daqiqa vaqt ajratib, moliyaviy ahvolingizni yaxshilash imkoniyatini boy bermang. Hozir ro'yxatdan o'ting va fikringizni qabul qilishni boshlang!",
+    "list":{
+      "1":{
+        "title":"Ro'yxatdan o'ting",
+        "description":"Ro'yxatdan o'tgandan so'ng siz isinish so'rovlarini olasiz va 8000 UZS olasiz"
       },
-      {
-        "title":"Участвуйте в опросах",
-        "description":"Мы будем отправлять электронные письма или сообщения в Telegram с приглашением принять участие винтересных опросах"
+      "2":{
+        "title":"So'rovlarda ishtirok eting",
+        "description":"Biz Telegram'ga qiziqarli so'rovlarda ishtirok etish taklifi bilan elektron pochta yoki xabarlar yuboramiz"
       },
-      {
-        "title":"Получайте деньги за пройденный опрос",
-        "description":"Сумма вознаграждения будет зависеть от длины и сложности пройденного опроса"
+      "3":{
+        "title":"O'tkazilgan so'rov uchun pul oling",
+        "description":"Mukofot miqdori o'tkazilgan so'rovning uzunligi va murakkabligiga bog'liq bo'ladi"
       },
-      {
-        "title":"Выводите деньги",
-        "description":"После накопления 90000 UZS, деньги можно вывести на телефон"
+      "4":{
+        "title":"Pulni chiqarib oling",
+        "description":"90000 UZS to'plangandan so'ng, pulni telefonga olish mumkin"
       }
-    ]
+    }
   },
   "benefits":{
-    "title":"Преимущества",
-    "list":[
-      {
-        "title":"Удобство ",
-        "description":"Участники могут заполнять опросы в любое время и в любом месте."
+    "title":"Afzalliklari",
+    "list":{
+      "1":{
+        "title":"Qulaylik",
+        "description":"Ishtirokchilar so'rovnomalarni istalgan vaqtda, istalgan joyda to'ldirishlari mumkin."
       },
-      {
-        "title":"Скорость",
-        "description":"Быстрый сбор ответов и автоматическая обработка данных."
+      "2":{
+        "title":"Tezlik",
+        "description":"Tezkor javoblarni yig'ish va ma'lumotlarni avtomatik qayta ishlash."
       },
-      {
-        "title":"Доступность",
-        "description":"Легкий доступ для широкой аудитории без географических ограничений"
+      "3":{
+        "title":"Mavjudligi",
+        "description":"Geografik cheklovlarsiz keng auditoriyaga oson kirish"
       },
-      {
-        "title":"Экономия",
-        "description":"Снижение затрат по сравнению с традиционными методами исследования"
+      "4":{
+        "title":"Tejash",
+        "description":"An'anaviy tadqiqot usullariga nisbatan xarajatlarni kamaytirish"
       },
-      {
-        "title":"Обратная связь",
-        "description":"Мгновенные ответы на ваши вопросы в реальном времени"
+      "5":{
+        "title":"Qayta aloqa",
+        "description":"Savollaringizga Real vaqtda tezkor javoblar"
       },
-      {
-        "title":"Анонимность",
-        "description":"Защита личной информации и конфиденциальность ответов"
+      "6":{
+        "title":"Anonimlik",
+        "description":"Shaxsiy ma'lumotlarni himoya qilish va javoblarning maxfiyligi"
       }
-    ]
+    }
   },
   "faqs" :{
-    "title":"Часто задаваемы вопросы"
+    "title":"Ko'p beriladigan savollar",
+    "questions":{
+      "1":{
+        "question":"Bitta so'rovnoma uchun qancha pul olaman?",
+        "answ":"An'anaviy tadqiqot usullariga nisbatan xarajatlarni kamaytirish"
+      },
+      "2":{
+        "question":"So'rovda qatnashish qancha vaqtni oladi?",
+        "answ":"So'rovni yakunlash uchun zarur bo'lgan vaqt har xil bo'lishi mumkin, ammo savollarning aksariyati 5-15 daqiqa davom etadi."
+      },
+      "3":{
+        "question":"So'rovnomada qatnashish uchun to'lovni qanday olishim mumkin?",
+        "answ":"To'lovlar sizning raqamingizga bog'langan kartada amalga oshirilishi mumkin. Shuningdek, siz topgan pulingizni xayriya ishlariga sarflashingiz mumkin"
+      },
+      "4":{
+        "question":"Shaxsiy ma'lumotlarim ishonchli himoyalanganligiga amin bo'lishim mumkinmi?",
+        "answ":"Ha, ko'plab platformalar mobil qurilmalar uchun optimallashtirilgan bo'lib, so'rovlarda qatnashish imkonini beradi"
+      },
+      "5":{
+        "question":"So'rovda qatnashganimdan keyin javoblarim bilan nima sodir bo'ladi?",
+        "answ":"Javoblar tahlil qilinadi va tadqiqot maqsadlarida ishlatiladi, ammo shaxsiy ma'lumotlar maxfiy bo'lib qoladi"
+      }
+    }
   },
   "app":{
-    "title":"Превратите свое свободное время в прибыль - начните зарабатывать уже сегодня!",
-    "subtitle":"Присоединяйтесь к нашему онлайн-сообществу и начните зарабатывать уже сегодня! Наша платформа предлагает вам уникальную возможность превратить ваше мнение в реальные деньги",
-    "button":"Скачать SpeakOut"
+    "title":"Bo'sh vaqtingizni daromadga aylantiring-bugun pul ishlashni boshlang!",
+    "subtitle":"Bizning onlayn hamjamiyatimizga qo'shiling va bugun pul ishlashni boshlang! Bizning platformamiz sizning fikringizni haqiqiy pulga aylantirish uchun noyob imkoniyatni taqdim etadi",
+    "button":"SpeakOut ni yuklab olisht"
   },
   "footer":{
-    "email":"Почта",
-    "phone":"Телефон",
-    "pravicy":"Политика конфиденциальности"
+    "email":"Pochta",
+    "phone":"Telefon",
+    "pravicy":"Maxfiylik siyosati"
   }
 }

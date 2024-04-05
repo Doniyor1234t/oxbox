@@ -1,96 +1,117 @@
 {
   "header":{
     "navbar":{
-      "opportunities":"Возможности",
-      "process":"Этапы",
-      "benefits":"Преимущества",
-      "faqs":"Частые вопросы",
-      "login":"Войти"
+      "opportunities":"Opportunities",
+      "process":"Benefits",
+      "benefits":"Stages",
+      "faqs":"FAQ",
+      "login":"Login"
     }
   },
   "Main":{
-    "title":"Ваше мнение - ваш заработок с нами!",
-    "subtitle":"Присоединяйтесь к нашему онлайн-сообществу и начните зарабатывать уже сегодня!",
-    "button":"Начать",
-    "download":"Скачать SpeakOut"
+    "title":"Your opinion is your income with us!",
+    "subtitle":"Join our online community and start earning today!",
+    "button":"Get started",
+    "download":"Download SpeakOutt"
   },
   "About":{
-    "title":"О проекте",
-    "subtitle":"SpeakOut предлагает вам уникальную возможность превратить ваше мнение в реальные деньги. Проходите опросы, делитесь своими мыслями и получайте вознаграждение за каждый ответ. ",
-    "button":"Начать",
+    "title":"About project",
+    "subtitle":"SpeakOut offers you a unique opportunity to turn your opinion into real money. Take surveys, share your thoughts and get rewarded for each answer.",
+    "button":"Sign up",
     "opportunities":[
       {
-        "title":"Цели проекта:",
-        "subtitle":"Вклад в развитие продуктов и услуг с помощью мнений пользователей."
+        "title":"Project objectives:",
+        "subtitle":"Contribution to the development of products and services through user opinions."
       },
       {
-        "title":"Наша миссия:",
-        "subtitle":"Обеспечить каждому возможность заработку"
+        "title":"Our mission:",
+        "subtitle":"To provide everyone with an opportunity to earn money"
       }
     ]
   },
   "process":{
-    "title":"Как это работает",
-    "subtitle":"Не упустите возможность улучшить свое финансовое положение, уделяя всего несколько минут в день. Зарегистрируйтесь сейчас и начните получать за свое мнение!",
-    "list":[
-      {
-        "title":"Регистрируйтесь на сайте",
-        "description":"После регистрации вы получите разминочные опросы и заработаете 8000 UZS"
+    "title":"How it works",
+    "subtitle":"Don't miss the opportunity to improve your financial situation by taking just a few minutes a day. Sign up now and start getting paid for your opinion!",
+    "list":{
+      "1":{
+        "title":"Sign-up on the website",
+        "description":"After registration, you will receive warm-up surveys and earn 8000 UZS"
       },
-      {
-        "title":"Участвуйте в опросах",
-        "description":"Мы будем отправлять электронные письма или сообщения в Telegram с приглашением принять участие винтересных опросах"
+      "2":{
+        "title":"Participate in surveys",
+        "description":"We will send emails or Telegram messages inviting you to take part in interesting surveys винтересных опросах"
       },
-      {
-        "title":"Получайте деньги за пройденный опрос",
-        "description":"Сумма вознаграждения будет зависеть от длины и сложности пройденного опроса"
+      "3":{
+        "title":"Get paid for completing the survey",
+        "description":"The amount of the reward will depend on the length and complexity of the completed survey"
       },
-      {
-        "title":"Выводите деньги",
-        "description":"После накопления 90000 UZS, деньги можно вывести на телефон"
+      "4":{
+        "title":"Withdraw money",
+        "description":"After accumulating 9,000 UZS, the money can be withdrawn to the phone"
       }
-    ]
+    }
   },
   "benefits":{
-    "title":"Преимущества",
-    "list":[
-      {
-        "title":"Удобство ",
-        "description":"Участники могут заполнять опросы в любое время и в любом месте."
+    "title":"Benefits",
+    "list":{
+      "1":{
+        "title":"Convenience",
+        "description":"Participants can fill out surveys anytime and anywhere."
       },
-      {
-        "title":"Скорость",
-        "description":"Быстрый сбор ответов и автоматическая обработка данных."
+      "2":{
+        "title":"Speed",
+        "description":"Fast response collection and automatic data processing."
       },
-      {
-        "title":"Доступность",
-        "description":"Легкий доступ для широкой аудитории без географических ограничений"
+      "3":{
+        "title":"Availability",
+        "description":"Easy access for a wide audience without geographical restrictions"
       },
-      {
-        "title":"Экономия",
-        "description":"Снижение затрат по сравнению с традиционными методами исследования"
+      "4":{
+        "title":"Savings",
+        "description":"Cost reduction compared to traditional research methods"
       },
-      {
-        "title":"Обратная связь",
-        "description":"Мгновенные ответы на ваши вопросы в реальном времени"
+      "5":{
+        "title":"Feedback",
+        "description":"Instant answers to your questions in real time"
       },
-      {
-        "title":"Анонимность",
-        "description":"Защита личной информации и конфиденциальность ответов"
+      "6":{
+        "title":"Anonymity",
+        "description":"Protection of personal information and confidentiality of responses"
       }
-    ]
+    }
   },
   "faqs" :{
-    "title":"Часто задаваемы вопросы"
+    "title":"FAQ",
+    "questions":{
+      "1":{
+        "question":"How much will I get for completing one survey?",
+        "answ":"Cost reduction compared to traditional research methods"
+      },
+      "2":{
+        "question":"How long does it take to participate in the survey?",
+        "answ":"The time required to complete the survey may vary, but most of the questions are designed for 5-15 minutes."
+      },
+      "3":{
+        "question":"How can I get paid for participating in surveys?",
+        "answ":"Payments can be made to a card linked to your number. And you can also spend the money you earn on charity"
+      },
+      "4":{
+        "question":"Can I be sure that my personal data is securely protected?",
+        "answ":"Yes, many platforms are optimized for mobile devices, allowing you to participate in surveys on the go"
+      },
+      "5":{
+        "question":"What happens to my responses after participating in the survey?",
+        "answ":"The answers are analyzed and used for research purposes, but personal information remains confidential"
+      }
+    }
   },
   "app":{
-    "title":"Превратите свое свободное время в прибыль - начните зарабатывать уже сегодня!",
-    "subtitle":"Присоединяйтесь к нашему онлайн-сообществу и начните зарабатывать уже сегодня! Наша платформа предлагает вам уникальную возможность превратить ваше мнение в реальные деньги",
-    "button":"Скачать SpeakOut"
+    "title":"Turn your free time into profit - start earning today!",
+    "subtitle":"Join our online community and start earning today! Our platform offers you a unique opportunity to turn your opinion into real money"
   },
   "footer":{
-    "email":"Почта",
-    "phone":"Телефон",
-    "pravicy":"Политика конфиденциальности"
+    "email":"Mail",
+    "phone":"Phone",
+    "pravicy":"Privacy policy"
   }
 }

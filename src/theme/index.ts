@@ -30,7 +30,7 @@ const getDesignTokens = (mode:PaletteMode) => ({
         paper2: "#445371",
       })
     },
-    text: {
+    p: {
       main: '#303A4F',
       ...(mode === 'dark' && {main: '#F4F5F9'}),
     },
@@ -41,8 +41,13 @@ function getTheme(mode: PaletteMode): ThemeOptions {
   return {
     breakpoints: {
       values: {
-        df:1440,
-        mb:768,
+        xs: 0,
+        sm: 600,
+        md: 960,
+        lg: 1280,
+        xl: 1920,
+        df: 1440,
+        mb: 768,
       },
     },
     ...getDesignTokens(mode),
@@ -146,9 +151,8 @@ function getTheme(mode: PaletteMode): ThemeOptions {
             h1: "h1",
             h2: "h2",
             h3: 'h3',
-            link:'a',
-            text:'p',
             h6: "h6",
+            p:  "p",
           }
         },
         styleOverrides: {
@@ -157,6 +161,15 @@ function getTheme(mode: PaletteMode): ThemeOptions {
             fontSize: 18,
             fontWeight: 400,
             lineHeight: '145%',
+            '@media (max-width: 768px)': {
+              fontSize:16,
+              lineHeight: "150%",
+            },
+            '&p':{
+              fontSize: 18,
+              fontWeight: 400,
+              lineHeight: "145%",
+            }
           },
           h1: {
             fontSize: 56,
@@ -190,22 +203,6 @@ function getTheme(mode: PaletteMode): ThemeOptions {
             fontWeight: 600,
             lineHeight: "120%",
           },
-          link: {
-            textDecoration: 'none',
-            color: "#445371",
-            fontSize: 16,
-            fontWeight: 400,
-            lineHeight: "150%",
-          },
-          text: {
-            fontSize: 18,
-            fontWeight: 400,
-            lineHeight: "145%",
-            '@media (max-width: 768px)': {
-              fontSize:16,
-              lineHeight: "150%",
-            },
-          }
         },
       },
       MuiButton: {
@@ -249,9 +246,6 @@ function getTheme(mode: PaletteMode): ThemeOptions {
             props: {
               variant: 'l', 
               color: 'primary',
-              // [theme.breakpoints.up('df')]: {
-              //   padding: '12px 20px',
-              // },
           },
             style: {
               borderRadius: 14,
@@ -318,17 +312,37 @@ function getTheme(mode: PaletteMode): ThemeOptions {
   };
 }
 
+declare module '@mui/material/Typography' {
+  interface TypographyPropsVariantOverrides {
+    p: true; // Define the 'link' variant
+  }
+
+}
 declare module '@mui/material/Button' {
+  interface ButtonPropsVariantOverrides {
+    l: true; // Define the 'l' variant
+    M: true; // Define the 'M' variant
+    special: true; // Define the 'special' variant
+  }
+}
+
+declare module '@mui/material/Button' {
+  interface ButtonPropsVariantOverrides {
+    l: true; // Define the 'l' variant
+    M: true; // Define the 'M' variant
+    special: true; // Define the 'special' variant
+  }
+
   interface ButtonPropsColorOverrides {
     tertiary: true;
-    special:true;
-    l:true;
-    M:true;
+    special: true;
+    l: true;
+    M: true;
   }
 }
 declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverride {
-    text: true;
+    p: true;
   }
 }
 declare module '@mui/material/styles' {

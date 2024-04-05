@@ -14,7 +14,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  flex: 1 1 50%;
   border-radius: 30px;
   padding: 40px;
   position: sticky;
@@ -22,6 +21,7 @@
 
   @media (width < 768px) {
     top: -100px;
+    // bottom: -100px;
     position: sticky;
     padding: 20px;
     min-height: 380px;
@@ -43,6 +43,15 @@
   }
 }
 
+.sticky {
+  position: sticky;
+  top: -190px;
+  margin-bottom: 340px;
+  min-height: 380px;
+  flex: 1 1 50%;
+
+}
+
 .right {
   display: flex;
   flex-direction: column;
@@ -51,6 +60,8 @@
 
   @media (width < 768px) {
     gap: 16px;
+    // position: sticky;
+    margin-top: -350px;
   }
 }
 

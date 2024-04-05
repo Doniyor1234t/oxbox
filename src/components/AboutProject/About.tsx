@@ -7,7 +7,7 @@ import { Arrowrightup } from "assets/Icons/AngleArrow";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
-  const { t, i18n } = useTranslation("translation");
+  const { t } = useTranslation("translation");
 
   return (
     <section id="opportunities" className={cls.opportunities}>
@@ -21,12 +21,12 @@ const About = () => {
             <Box sx={{backgroundColor:'background.paper'}} className={cls.topContent}>
               
               <Typography variant="h2">{t('About.title')}</Typography>
-              <Typography sx={{margin:'16px 0 20px 0'}} variant="text" color={'text.main'}>
+              <Typography sx={{margin:'16px 0 20px 0'}} variant="p" color={'text.main'}>
                 {/* SpeakOut - это онлайн-платформа для заработка на своем мнении. 
                 Мы предлагаем пользователям зарабатывать на своих отзывах о товарах и услугах. */}
                 {t('About.subtitle')}
               </Typography>
-              <Button variant="xl" color="primary" endIcon={<Arrowrightup/>}>{t('Main.button')}</Button>
+              <Button color="primary" endIcon={<Arrowrightup/>}>{t('Main.button')}</Button>
             </Box>
             <Box className={cls.bottomContent}>
               <Box className={cls.bottBox}>
@@ -38,7 +38,7 @@ const About = () => {
                       fontSize:18,
                       lineHeight: "145%",
                     },
-                  }} variant="text" color={'text.main'}>{t('About.opportunities.1.subtitle')}</Typography>
+                  }} variant="p" color={'text.main'}>{t('About.opportunities.1.subtitle')}</Typography>
                 </div>
               </Box>
               <Box className={cls.bottBox}>
@@ -50,7 +50,7 @@ const About = () => {
                       fontSize:18,
                       lineHeight: "145%",
                     },
-                  }} variant="text" color={'text.main'}>{t('About.opportunities.2.subtitle')}</Typography>
+                  }} variant="p" color={'text.main'}>{t('About.opportunities.2.subtitle')}</Typography>
                 </div>
               </Box>
             </Box>

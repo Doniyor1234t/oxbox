@@ -5,37 +5,42 @@ import {Icon3} from "assets/Icons/Benefits/3";
 import {Icon4} from "assets/Icons/Benefits/4";
 import {Icon5} from "assets/Icons/Benefits/5";
 import {Icon6} from "assets/Icons/Benefits/6";
+import { useTranslation } from "react-i18next";
 
-const benDb = [
+const benDb = () => {
+  const {t} = useTranslation("translation");
+  const db =[
   {
-    title: "Удобство",
-    description: "Участники могут заполнять опросы в любое время и в любом месте.",
+    title: t("benefits.list.1.title"),
+    description: t("benefits.list.1.description"),
     icon :Icon1
   },
   {
-    title: "Скорость",
-    description: "Быстрый сбор ответов и автоматическая обработка данных.",
+    title: t("benefits.list.2.title"),
+    description: t("benefits.list.2.description"),
     icon :Icon2
   },
   {
-    title: "Доступность",
-    description: "Легкий доступ для широкой аудитории без географических ограничений",
+    title: t("benefits.list.3.title"),
+    description: t("benefits.list.3.description"),
     icon :Icon3
   },
   {
-    title: "Экономия",
-    description: "Снижение затрат по сравнению с традиционными методами исследования",
+    title: t("benefits.list.4.title"),
+    description: t("benefits.list.4.description"),
     icon :Icon4
   },
   {
-    title: "Обратная связь",
-    description: "Мгновенные ответы на ваши вопросы в реальном времени",
+    title: t("benefits.list.5.title"),
+    description: t("benefits.list.5.description"),
     icon :Icon5
   },
   {
-    title: "Анонимность",
-    description: "Защита личной информации и конфиденциальность ответов",
+    title: t("benefits.list.6.title"),
+    description: t("benefits.list.6.description"),
     icon :Icon6
   },
-];
+]
+return db;
+};
 export default benDb;

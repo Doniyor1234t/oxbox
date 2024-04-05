@@ -6,26 +6,26 @@ import image4 from "../../assets/Imgs/4.png";
 
 const processDb = () =>  {
   
-  const { t, i18n } = useTranslation("translation");
+  const { t } = useTranslation("translation");
   const db = [
     {
-      title: t('About.opportunities.1.title'),
-      description: t('About.opportunities.1.description'),
+      title: t('process.list.1.title'),
+      description: t('process.list.1.description'),
       img:image1
     },
     {
-      title: t('About.opportunities.2.title'),
-      description: t('About.opportunities.2.description'),
+      title: t('process.list.2.title'),
+      description: t('process.list.2.description'),
       img:image2
     },
     {
-      title: t('About.opportunities.3.title'),
-      description: t('About.opportunities.3.description'),
+      title: t('process.list.3.title'),
+      description: t('process.list.3.description'),
       img:image3
     },
     {
-      title: t('About.opportunities.4.title'),
-      description: t('About.opportunities.4.description'),
+      title: t('process.list.4.title'),
+      description: t('process.list.4.description'),
       img:image4
     },
 ]

@@ -1,7 +1,5 @@
-// Generated from SVG to Code Figma Plugin
-import React from "react";
-    
-export const Uzb = (props) => (
+ 
+export const Uzb = () => (
 <svg height="24" width="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 	<rect height="16.6429" width="23.5" fill="white" rx="1.75" stroke="#F5F5F5" strokeWidth="0.5" x="0.25" y="3.68"/>
 	<mask height="18" id="mask0_2296_1535" style={{"maskType":"luminance"}} width="24" x="0" y="3" maskUnits="userSpaceOnUse">

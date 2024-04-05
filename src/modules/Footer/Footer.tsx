@@ -4,8 +4,10 @@ import Logo from "assets/Icons/Logo.tsx"
 import { Googleplay } from "src/assets/Icons/GooglePlay";
 import Img from "src/assets/Imgs/Download.png";
 import AppleIcon from '@mui/icons-material/Apple';
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const {t} = useTranslation('translation')
   return (
     <footer className={cls.footer}>
       <Container>
@@ -16,18 +18,18 @@ const Footer = () => {
             </Link>
             <Box className={cls.infos}>
               <ul className={cls.menu}>
-                <li className={cls.menuItem}><Link sx={{p:0}} href='#opportunities'>Возможности</Link></li>
-                <li className={cls.menuItem}><Link sx={{p:0}} href='#process'>Этапы</Link></li>
-                <li className={cls.menuItem}><Link sx={{p:0}} href='#benefits'>Преимущества</Link></li>
-                <li className={cls.menuItem}><Link sx={{p:0}} href='#faqs'>Частые вопросы</Link></li>
+                <li className={cls.menuItem}><Link sx={{p:0}} href='#opportunities'>{t('header.navbar.opportunities')}</Link></li>
+                <li className={cls.menuItem}><Link sx={{p:0}} href='#process'>{t('header.navbar.process')}</Link></li>
+                <li className={cls.menuItem}><Link sx={{p:0}} href='#benefits'>{t('header.navbar.benefits')}</Link></li>
+                <li className={cls.menuItem}><Link sx={{p:0}} href='#faqs'>{t('header.navbar.faqs')}</Link></li>
               </ul>
               <div className={cls.contacts}>
                 <div className={cls.contact}>
-                  <span>Почта</span>
+                  <span>{t('footer.email')}</span>
                   <Link sx={{p:0}} href="">example@speakout.uz</Link>
                 </div>
                 <div className={cls.contact}>
-                  <span>Телефон</span>
+                  <span>{t('footer.phone')}</span>
                   <Link sx={{p:0}} href='tel:+1234567890'>+998 (91)-775-09-78</Link>
                 </div>
               </div>
@@ -46,7 +48,7 @@ const Footer = () => {
           <Box className={cls.box}>
             <Typography sx={{fontSize:'14px',fontWeight:'400',color:'#858FA3'}}>© 2024. SpeakOut All Rights Reserved.</Typography>
             <Link sx={{p:0}} href=''>
-            <Typography sx={{fontSize:'14px',fontWeight:'400',color:'#858FA3'}}>Политика конфиденциальности</Typography>
+            <Typography sx={{fontSize:'14px',fontWeight:'400',color:'#858FA3'}}>{t('footer.pravicy')}</Typography>
             </Link>
           </Box>
         </Box>
