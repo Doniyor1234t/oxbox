@@ -44,7 +44,7 @@ const About = () => {
               <Box className={cls.bottBox}>
                 <Thunder />
                 <div className={cls.textBox}>
-                  <Typography variant="h6">{t('About.opportunities.2.subtitle')}</Typography>
+                  <Typography variant="h6">{t('About.opportunities.2.title')}</Typography>
                   <Typography sx={{
                     '@media (max-width: 768px)': {
                       fontSize:18,

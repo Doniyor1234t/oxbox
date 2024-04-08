@@ -18,16 +18,16 @@
     "title":"About project",
     "subtitle":"SpeakOut offers you a unique opportunity to turn your opinion into real money. Take surveys, share your thoughts and get rewarded for each answer.",
     "button":"Sign up",
-    "opportunities":[
-      {
+    "opportunities":{
+      "1":{
         "title":"Project objectives:",
         "subtitle":"Contribution to the development of products and services through user opinions."
       },
-      {
+      "2":{
         "title":"Our mission:",
         "subtitle":"To provide everyone with an opportunity to earn money"
       }
-    ]
+    }
   },
   "process":{
     "title":"How it works",

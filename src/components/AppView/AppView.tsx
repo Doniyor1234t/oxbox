@@ -31,7 +31,7 @@ const AppView = () => {
             '&:hover':{backgroundColor:'rgba(255, 255, 255, 0.10)', outline:'none'},
             '&.MuiButton-root': { color: 'inherit', boxShadow: 'none' } }} 
           >
-            <Typography color={'#fff'} sx={{fontSize:22,fontWeight:600,lineHeight:"125%"}}>{t("app.button")}</Typography>
+            <Typography color={'#fff'} sx={{fontSize:22,fontWeight:600,lineHeight:"125%"}}>{t("Main.download")}</Typography>
             <img src={Img} alt="" />
           </Button>
           <div className={cls.images}>

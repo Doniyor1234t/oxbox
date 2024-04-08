@@ -46,9 +46,14 @@
 .sticky {
   position: sticky;
   top: -190px;
-  margin-bottom: 340px;
+  // margin-bottom: 340px;
   min-height: 380px;
   flex: 1 1 50%;
+
+  @media (width < 768px) {
+    margin-bottom: 340px;
+
+  }
 
 }
 

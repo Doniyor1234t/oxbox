@@ -99,7 +99,8 @@ const MainLand = () => {
                 margin:'0 auto',
                 textAlign:'center',
                 // flex:'1 0 auto',
-                width:'100px'
+                width:'100px',
+                fontSize:22,
               }
             }}>{t('Main.download')}</Typography>
             <img src={Img} alt="" />
