@@ -29,7 +29,7 @@ const About = () => {
               <Button color="primary" endIcon={<Arrowrightup/>}>{t('Main.button')}</Button>
             </Box>
             <Box className={cls.bottomContent}>
-              <Box className={cls.bottBox}>
+              {/* <Box className={cls.bottBox}>
                 <Thunder />
                 <div className={cls.textBox}>
                   <Typography variant="h6">{t('About.opportunities.1.title')}</Typography>
@@ -40,7 +40,7 @@ const About = () => {
                     },
                   }} variant="p" color={'text.main'}>{t('About.opportunities.1.subtitle')}</Typography>
                 </div>
-              </Box>
+              </Box> */}
               <Box className={cls.bottBox}>
                 <Thunder />
                 <div className={cls.textBox}>

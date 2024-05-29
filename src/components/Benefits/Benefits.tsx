@@ -13,7 +13,7 @@ const Benefits = () => {
           <Box className={cls.box}>
             {benDb().map((item, index) => {
               return (
-                <Box key={index} className={cls.item}>
+                <Box sx={{backgroundColor:'background.default'}} key={index} className={cls.item}>
                   <Box className={cls.icon}>
                     <item.icon />
                   </Box>

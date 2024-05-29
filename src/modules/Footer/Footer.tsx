@@ -26,7 +26,7 @@ const Footer = () => {
               <div className={cls.contacts}>
                 <div className={cls.contact}>
                   <span>{t('footer.email')}</span>
-                  <Link sx={{p:0}} href="">example@speakout.uz</Link>
+                  <Link sx={{p:0}} href="mailto:support@speakout.uz">support@speakout.uz</Link>
                 </div>
                 <div className={cls.contact}>
                   <span>{t('footer.phone')}</span>

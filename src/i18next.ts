@@ -14,7 +14,8 @@ i18next
   // .use(Backend)
   .init({
     // debug: true,
-    fallbackLng: "en",
+    fallbackLng: "uz",
+    // lng: "uz",
     resources: {
       en: {
         translation: translation_en,

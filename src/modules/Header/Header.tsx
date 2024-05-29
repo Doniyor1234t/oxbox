@@ -147,7 +147,6 @@ const Header = () => {
                 <MenuItem id='uz' sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Uzb /> O’zbekcha</MenuItem>
                 <MenuItem id='ru' sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Ru />Русский</MenuItem>
                 <MenuItem id='en' sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Eng/>English</MenuItem>
-                <MenuItem id='kz' sx={{padding:'12px 32px'}} className={cls.langItem} onClick={handleClick}><Kz/>Қазақша</MenuItem>
               </Box>
             </Popper>
             </Box>

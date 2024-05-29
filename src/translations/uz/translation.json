@@ -12,7 +12,7 @@
     "title":"Sizning fikringiz-biz bilan daromadingiz!",
     "subtitle":"Bizning onlayn hamjamiyatimizga qo'shiling va bugun pul ishlashni boshlang!",
     "button":"Boshlash",
-    "download":"SpeakOut ni yuklab olisht"
+    "download":"SpeakOut ni yuklab olish"
   },
   "About":{
     "title":"Loyiha haqida",
@@ -108,11 +108,11 @@
   "app":{
     "title":"Bo'sh vaqtingizni daromadga aylantiring-bugun pul ishlashni boshlang!",
     "subtitle":"Bizning onlayn hamjamiyatimizga qo'shiling va bugun pul ishlashni boshlang! Bizning platformamiz sizning fikringizni haqiqiy pulga aylantirish uchun noyob imkoniyatni taqdim etadi",
-    "button":"SpeakOut ni yuklab olisht"
+    "button":"SpeakOut ni yuklab olish"
   },
   "footer":{
     "email":"Pochta",
-    "phone":"Telefon",
+    "phone":"Telegram",
     "pravicy":"Maxfiylik siyosati"
   }
 }

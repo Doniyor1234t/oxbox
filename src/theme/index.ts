@@ -102,11 +102,14 @@ function getTheme(mode: PaletteMode): ThemeOptions {
       },
       MuiAccordionSummary: {
         styleOverrides: {
-          expandIconWrapper:{
+          expandIconWrapper: ({ theme }) => ({
             borderRadius:'50%', 
-            background:'#fff', 
-            padding:20
-          },
+            padding:20,
+            background:"#fff", 
+            ...(theme.palette.mode === 'dark' && {
+              backgroundColor:'#222A39'
+            }),
+          }),
           content: {
             margin:0,
           },
@@ -124,7 +127,7 @@ function getTheme(mode: PaletteMode): ThemeOptions {
       },
       MuiAccordionDetails: {
         styleOverrides: {
-          root: {
+          root: ({ theme }) => ({
             backgroundColor: '#fff',
             padding: 20, 
             marginTop: 16,
@@ -133,7 +136,10 @@ function getTheme(mode: PaletteMode): ThemeOptions {
               padding: 16,
               marginTop: 12,
             },
-          },
+            ...(theme.palette.mode === 'dark' && {
+               backgroundColor:'#222A39'
+            }),
+          }),
         },
       },
       MuiContainer: {
