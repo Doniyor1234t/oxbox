@@ -75,8 +75,8 @@ const MainLand = () => {
             <Typography variant="h1" component="h1">{t('Main.title')}</Typography>
             <Typography variant="p">{t('Main.subtitle')}</Typography>
           </Box>
-          <Button href="https://test-oxbox-respondent.udevs.io/home" color="primary" endIcon={<Arrowrightup />}>{t('Main.button')}</Button>
-          <Button onClick={()=> window.location.href = ('https://play.google.com/store/apps/details?id=uz.udevs.dzhehuti_respondent_mobile&hl=ru&gl=US')} sx={{ 
+          <Button href="https://oxbox-respondent.udevs.io/home" color="primary" endIcon={<Arrowrightup />}>{t('Main.button')}</Button>
+          <Button onClick={()=> window.location.href = ('https://onelink.to/ywrr87')} sx={{ 
             backgroundColor:'background.paper', 
             width:'300px', 
             padding:'12px', 

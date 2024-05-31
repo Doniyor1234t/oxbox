@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className={cls.contact}>
                   <span>{t('footer.phone')}</span>
-                  <Link sx={{p:0}} href='tel:+1234567890'>+998 (91)-775-09-78</Link>
+                  <Link sx={{p:0}} href='#'>+998 (91)-775-09-78</Link>
                 </div>
               </div>
             </Box>
