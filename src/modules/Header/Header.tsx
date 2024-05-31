@@ -114,7 +114,7 @@ const Header = () => {
             margin:'12px 0'
           }
         }}>
-          <Link sx={{p:0}} href="/" className={cls.logo}>
+          <Link sx={{p:0, height:44,width:74}} href="/" className={cls.logo}>
             <Logo />
           </Link>
           <Box className={cls.menu} sx={{ 
@@ -150,7 +150,7 @@ const Header = () => {
               </Box>
             </Popper>
             </Box>
-            <Button variant="l" endIcon={<ArrowForwardIcon/>}>{t('header.navbar.login')} </Button>
+            <Button href='https://test-oxbox-respondent.udevs.io/auth' variant="l" endIcon={<ArrowForwardIcon/>}>{t('header.navbar.login')} </Button>
           </Box>
         </Box>
       </Container>

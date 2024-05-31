@@ -15,7 +15,7 @@ i18next
   .init({
     // debug: true,
     fallbackLng: "uz",
-    // lng: "uz",
+    lng: "uz",
     resources: {
       en: {
         translation: translation_en,

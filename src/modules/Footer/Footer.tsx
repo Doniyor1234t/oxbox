@@ -47,7 +47,7 @@ const Footer = () => {
           </Box>
           <Box className={cls.box}>
             <Typography sx={{fontSize:'14px',fontWeight:'400',color:'#858FA3'}}>© 2024. SpeakOut All Rights Reserved.</Typography>
-            <Link sx={{p:0}} href=''>
+            <Link sx={{p:0}} href='./ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ_1 (2).pdf'>
             <Typography sx={{fontSize:'14px',fontWeight:'400',color:'#858FA3'}}>{t('footer.pravicy')}</Typography>
             </Link>
           </Box>

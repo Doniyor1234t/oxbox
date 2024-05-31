@@ -9,7 +9,7 @@
     }
   },
   "Main":{
-    "title":"Your opinion is your income with us!",
+    "title":"Participate in surveys and get paid!",
     "subtitle":"Join our online community and start earning today!",
     "button":"Get started",
     "download":"Download SpeakOutt"
@@ -25,7 +25,7 @@
       },
       "2":{
         "title":"Our mission:",
-        "subtitle":"To provide everyone with an opportunity to earn money"
+        "subtitle":"We strive to provide an opportunity for people to earn money by sharing their opinions, as well as to help companies and organizations obtain valuable data to make informed decisions. We are confident that every vote matters, and our platform is designed to ensure that this value is rewarded."
       }
     }
   },
@@ -85,7 +85,7 @@
     "questions":{
       "1":{
         "question":"How much will I get for completing one survey?",
-        "answ":"Cost reduction compared to traditional research methods"
+        "answ":"You will receive a reward for completing one survey, which may vary depending on the specific survey and platform. This can usually be a monetary reward, bonuses, gifts, or other forms of compensation. The amount of remuneration depends on the duration of the survey, the complexity of the questions and the requirements of the customer."
       },
       "2":{
         "question":"How long does it take to participate in the survey?",
@@ -97,7 +97,7 @@
       },
       "4":{
         "question":"Can I be sure that my personal data is securely protected?",
-        "answ":"Yes, many platforms are optimized for mobile devices, allowing you to participate in surveys on the go"
+        "answ":"Your privacy and security are important to us. We take measures to protect your personal data: Encryption: We use modern encryption methods to protect the transfer of data between you and our servers. Authentication: Only authorized employees who have been authenticated have access to your data. Physical security: Our servers are located in secure premises with limited access. Threat monitoring and detection: We constantly monitor the activity of our systems and respond to any suspicious activity. Privacy Policy: We have a strict privacy policy that governs the collection, storage and use of your data."
       },
       "5":{
         "question":"What happens to my responses after participating in the survey?",
@@ -111,7 +111,7 @@
   },
   "footer":{
     "email":"Mail",
-    "phone":"Phone",
+    "phone":"Telegram",
     "pravicy":"Privacy policy"
   }
 }

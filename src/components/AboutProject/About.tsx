@@ -26,7 +26,7 @@ const About = () => {
                 Мы предлагаем пользователям зарабатывать на своих отзывах о товарах и услугах. */}
                 {t('About.subtitle')}
               </Typography>
-              <Button color="primary" endIcon={<Arrowrightup/>}>{t('Main.button')}</Button>
+              <Button href="https://test-oxbox-respondent.udevs.io/home" color="primary" endIcon={<Arrowrightup/>}>{t('Main.button')}</Button>
             </Box>
             <Box className={cls.bottomContent}>
               {/* <Box className={cls.bottBox}>

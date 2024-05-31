@@ -4,9 +4,11 @@ import AppleIcon from '@mui/icons-material/Apple';
 import { Googleplay } from "assets/Icons/GooglePlay";
 import processDb from "./processDb";
 import { useTranslation } from "react-i18next";
+import { redirect, useNavigate } from "react-router-dom";
 
 const Process = () => {
   const { t } = useTranslation("translation");
+  const navigate = useNavigate();
 
   return (
     <section id="process">
@@ -20,7 +22,7 @@ const Process = () => {
               </Typography>
               <div className={cls.btns}>
                 <Button variant="special" color="primary" startIcon={<AppleIcon/>}>App Store</Button>
-                <Button variant="special" color="primary" startIcon={<Googleplay/>}>Google Play</Button>
+                <Button onClick={()=> window.location.href = ('https://play.google.com/store/apps/details?id=uz.udevs.dzhehuti_respondent_mobile&hl=ru&gl=US')} variant="special" color="primary" startIcon={<Googleplay/>}>Google Play</Button>
               </div>
             </Box>
           </div>

@@ -9,7 +9,7 @@
     }
   },
   "Main":{
-    "title":"Sizning fikringiz-biz bilan daromadingiz!",
+    "title":"So'rovlarda ishtirok eting va pul oling!",
     "subtitle":"Bizning onlayn hamjamiyatimizga qo'shiling va bugun pul ishlashni boshlang!",
     "button":"Boshlash",
     "download":"SpeakOut ni yuklab olish"
@@ -25,7 +25,7 @@
       },
       "2":{
         "title":"Bizning vazifamiz:",
-        "subtitle":"Har kimga daromad olish imkoniyatini beringу"
+        "subtitle":"Biz, o‘z fikrlarini baham ko‘rgan xolda odamlarga pul ishlash imkoniyatiga, shuningdek, turli kompaniya va tashkilotlarga ongli qarorlar qabul qilishda va qimmatli ma’lumotlar olish uchun yordam berishga intilmoqdamiz. Xar bir ovoz muhimdir va bizning platformamiz ushbu qiymatni mukofotlanishini ta’minlash uchun yaratilganligiga ishonchimiz komildir."
       }
     }
   },
@@ -47,7 +47,7 @@
       },
       "4":{
         "title":"Pulni chiqarib oling",
-        "description":"90000 UZS to'plangandan so'ng, pulni telefonga olish mumkin"
+        "description":"Pulni olib qo'yish 70 000 ball to'planganda mumkin bo'ladi. Siz ularni 'Uzcard' yoki 'Humo' plastik kartangizga olib kelishingiz mumkin. Pul darhol kartangizga o'tkaziladi."
       }
     }
   },
@@ -85,7 +85,7 @@
     "questions":{
       "1":{
         "question":"Bitta so'rovnoma uchun qancha pul olaman?",
-        "answ":"An'anaviy tadqiqot usullariga nisbatan xarajatlarni kamaytirish"
+        "answ":"Siz bitta so‘rovnomada ishtirok etganingiz uchun mukofot olasiz, ushbu mukofot so‘rovnoma yoki platformaning aniq ko‘rinishiga qarab har-xil bo‘ladi. Odatda bu pul mukofoti, bonuslar, sovg‘alar yoki boshqa kompensatsiyalar ko‘rinishida bo‘lishi mumkin. Mukofotning  miqdori so‘rovnomaning davomiyligiga, savollarning oson-yengilligiga va mijozning talablariga bog‘liq bo‘ladi."
       },
       "2":{
         "question":"So'rovda qatnashish qancha vaqtni oladi?",
@@ -97,7 +97,7 @@
       },
       "4":{
         "question":"Shaxsiy ma'lumotlarim ishonchli himoyalanganligiga amin bo'lishim mumkinmi?",
-        "answ":"Ha, ko'plab platformalar mobil qurilmalar uchun optimallashtirilgan bo'lib, so'rovlarda qatnashish imkonini beradi"
+        "answ":"Boshqa xavf va xavflarda bo'lgani kabi, bu juda muhimdir. Shaxsiy ma'lumotlarni himoya qilish: \nShifrlash: tugun ma'lumotlarini himoya qilish uchun zamonaviy shifrlash usullaridan foydalangan holda serverlarni o'rnatishingiz mumkin. \nAutentifikatsiya: Kirish huquqshunosligida ma'lumotlarni ro'yxatdan o'tkazish faqat autentifikatsiya, vakolatli mansabdor shaxslar yoki mansabdor shaxslar uchun. \nJismoniy xatarlar: serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar, serverlar. \nShu bilan birga, agar siz uning nima ekanligiga ishonchingiz komil bo'lmasa, uning nima ekanligiga va nima ekanligiga shubha qilmasligingiz mumkin. \nBu oyatda Alloh taoloning aytishicha, unga kufr keltirgan va unga itoatsizlik qilgan odamlar do'zaxda va oxiratda alamli jazoga tortiladilar."
       },
       "5":{
         "question":"So'rovda qatnashganimdan keyin javoblarim bilan nima sodir bo'ladi?",

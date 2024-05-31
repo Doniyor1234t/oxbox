@@ -8,6 +8,7 @@ import { Main } from './routes/Main'
 import { CssBaseline } from '@mui/material'
 import ReactLenis from '@studio-freight/react-lenis'
 import "./i18next";
+import PreloaderProvider from './providers/Preloader'
 
 const root = createBrowserRouter([
   {
@@ -21,15 +22,16 @@ function App() {
   
   return (
     <>
-    <ReactLenis root>
-      <div className="app" >
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Header />
-          <RouterProvider router={root} />
-          <Footer />
-        </ThemeProvider>
-      </div>
+      <PreloaderProvider />
+      <ReactLenis root>
+        <div className="app" >
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <Header />
+            <RouterProvider router={root} />
+            <Footer />
+          </ThemeProvider>
+        </div>
       </ReactLenis>
     </>
   )
