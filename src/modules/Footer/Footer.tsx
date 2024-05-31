@@ -41,7 +41,7 @@ const Footer = () => {
               </Box>
               <Box sx={{background:'#fff'}} className={cls.app}>
                 <img src={Img} alt="" />
-                <Button sx={{backgroundColor:'#F43F5E', '&:hover':{background:'#F43F5E'}}} variant="M" color="primary" startIcon={<Googleplay fill="white" w="20px" h="20px"/>}>Google Play</Button>
+                <Button href="https://play.google.com/store/apps/details?id=uz.udevs.dzhehuti_respondent_mobile&hl=uz" sx={{backgroundColor:'#F43F5E', '&:hover':{background:'#F43F5E'}}} variant="M" color="primary" startIcon={<Googleplay fill="white" w="20px" h="20px"/>}>Google Play</Button>
               </Box>
             </Box>
           </Box>

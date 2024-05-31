@@ -7,7 +7,6 @@ import LanguageIcon from '@mui/icons-material/Language';
 import { Ru } from 'src/assets/Icons/Ru';
 import { Uzb } from 'src/assets/Icons/Uzb';
 import { Eng } from 'src/assets/Icons/Eng';
-import { Kz } from 'src/assets/Icons/Kz';
 import gsap from 'gsap';
 import { useTranslation } from 'react-i18next';
 

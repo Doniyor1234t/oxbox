@@ -55,28 +55,28 @@
     "title":"Benefits",
     "list":{
       "1":{
-        "title":"Convenience",
-        "description":"Participants can fill out surveys anytime and anywhere."
+        "title":"Additional income",
+        "description":"Participants can take part in the survey and earn income"
       },
       "2":{
-        "title":"Speed",
-        "description":"Fast response collection and automatic data processing."
+        "title":"Flexibility, comfort",
+        "description":"The panel allows you to participate in surveys from anywhere and at convenient times"
       },
       "3":{
-        "title":"Availability",
-        "description":"Easy access for a wide audience without geographical restrictions"
+        "title":"Say your mind",
+        "description":"Participants can influence public issues by displaying their world-view"
       },
       "4":{
-        "title":"Savings",
+        "title":"Saving",
         "description":"Cost reduction compared to traditional research methods"
       },
       "5":{
-        "title":"Feedback",
-        "description":"Instant answers to your questions in real time"
+        "title":"Topics",
+        "description":"Online panels offer a wide variety of research topics ranging from marketing to health care."
       },
       "6":{
-        "title":"Anonymity",
-        "description":"Protection of personal information and confidentiality of responses"
+        "title":"Privacy",
+        "description":"Participants can stay anonymous, which ensures their confidentiality."
       }
     }
   },

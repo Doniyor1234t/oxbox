@@ -4,11 +4,9 @@ import AppleIcon from '@mui/icons-material/Apple';
 import { Googleplay } from "assets/Icons/GooglePlay";
 import processDb from "./processDb";
 import { useTranslation } from "react-i18next";
-import { redirect, useNavigate } from "react-router-dom";
 
 const Process = () => {
   const { t } = useTranslation("translation");
-  const navigate = useNavigate();
 
   return (
     <section id="process">

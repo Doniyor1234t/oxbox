@@ -55,28 +55,28 @@
     "title":"Afzalliklari",
     "list":{
       "1":{
-        "title":"Qulaylik",
-        "description":"Ishtirokchilar so'rovnomalarni istalgan vaqtda, istalgan joyda to'ldirishlari mumkin."
+        "title":"Qo‘shimcha daromad",
+        "description":"Ishtirokchilar so‘rovnoma ishtirok etib, daromad olishlari mumkin"
       },
       "2":{
-        "title":"Tezlik",
-        "description":"Tezkor javoblarni yig'ish va ma'lumotlarni avtomatik qayta ishlash."
+        "title":"Moslashuvchanlik, qulaylik",
+        "description":"Panelda istalgan joydan va qulay vaqtlarda so‘rovnomalarda ishtirok etish imkonini beradi."
       },
       "3":{
-        "title":"Mavjudligi",
-        "description":"Geografik cheklovlarsiz keng auditoriyaga oson kirish"
+        "title":"O‘z fikrini aytish",
+        "description":"Ishtirokchilar o‘z dunyo-qarashlarini namoyon qilish orqali jamoat masalalariga ta’sir o‘tkazishlari mumkin"
       },
       "4":{
         "title":"Tejash",
         "description":"An'anaviy tadqiqot usullariga nisbatan xarajatlarni kamaytirish"
       },
       "5":{
-        "title":"Qayta aloqa",
-        "description":"Savollaringizga Real vaqtda tezkor javoblar"
+        "title":"Mavzular",
+        "description":"Onlayn-panellar marketingdan tortib sog‘liqni saqlashgacha bo‘lgan turli xil tadqiqotlar mavzusini taklif yetadi."
       },
       "6":{
-        "title":"Anonimlik",
-        "description":"Shaxsiy ma'lumotlarni himoya qilish va javoblarning maxfiyligi"
+        "title":"Maxfiylik",
+        "description":"Ishtirokchilar anonim xolda qolishlari mumkin, bu esa, ularning maxfiyligini ta’minlaydi."
       }
     }
   },
