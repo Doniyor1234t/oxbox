@@ -1,15 +1,22 @@
-import { Box, Button, Container, Typography } from "@mui/material"
+import { Box, Button, Container, Skeleton, Typography } from "@mui/material"
 import cls from './style.module.scss';
 import { Arrowrightup } from "src/assets/Icons/AngleArrow";
 import Img from "src/assets/Imgs/Download.png";
 import DoubleApp1 from "src/assets/Imgs/iPhone-1.png";
 import DoubleApp from "src/assets/Imgs/iPhone.png";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from "react-i18next";
 
 const MainLand = () => {
+
+  const [isLoadedImg1, setIsLoadedImg1] = useState(false);
+  const [isLoadedImg2, setIsLoadedImg2] = useState(false);
+  const [isLoadedImg3, setIsLoadedImg3] = useState(false);
+  console.log(isLoadedImg1, isLoadedImg2, isLoadedImg3);
+  console.log(!isLoadedImg3 || !isLoadedImg2 || !isLoadedImg1);
+  
   
   const { t } = useTranslation("translation");
 
@@ -106,12 +113,14 @@ const MainLand = () => {
             <img src={Img} alt="" />
           </Button>
           </Box>
-          <Box className={cls.img}>
-            <img src={DoubleApp1} alt="" />
-            <img src={DoubleApp} alt="" />
+          <Box className={`${cls.img} ${ isLoadedImg1 && isLoadedImg2 && isLoadedImg3 ? cls.loaded : null }`}>
+            <img src={DoubleApp1} alt="App image" onLoad={() => setIsLoadedImg1(true)}/>
+            <img src={DoubleApp} alt="App image" onLoad={() => setIsLoadedImg2(true)}/>
+            {(!isLoadedImg1 || !isLoadedImg2 || !isLoadedImg3) && <Skeleton animation="wave" sx={{width:"100%",height:'110%'}} variant="rectangular"/>
+            }
           </Box>
           <div ref={imgRef} className={cls.moveImg}>
-            <img src={DoubleApp1} alt="" />
+            <img src={DoubleApp1} alt="App image" style={{display:`${isLoadedImg3?"block":"none"}`}} onLoad={() => {setIsLoadedImg3(true)}}/>
           </div>
         </Container>
       </section>

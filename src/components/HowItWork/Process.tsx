@@ -19,7 +19,7 @@ const Process = () => {
               {t('process.subtitle')}
               </Typography>
               <div className={cls.btns}>
-                <Button variant="special" color="primary" startIcon={<AppleIcon/>}>App Store</Button>
+                <Button onClick={()=> window.location.href = ('https://apps.apple.com/app/id1558126252')} variant="special" color="primary" startIcon={<AppleIcon/>}>App Store</Button>
                 <Button onClick={()=> window.location.href = ('https://play.google.com/store/apps/details?id=uz.udevs.dzhehuti_respondent_mobile&hl=ru&gl=US')} variant="special" color="primary" startIcon={<Googleplay/>}>Google Play</Button>
               </div>
             </Box>

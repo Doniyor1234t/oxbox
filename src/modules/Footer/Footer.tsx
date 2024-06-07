@@ -29,15 +29,14 @@ const Footer = () => {
                   <Link sx={{p:0}} href="mailto:support@speakout.uz">support@speakout.uz</Link>
                 </div>
                 <div className={cls.contact}>
-                  <span>{t('footer.phone')}</span>
-                  <Link sx={{p:0}} href='#'>+998 (91)-775-09-78</Link>
+                  <Link sx={{p:0}} href='https://t.me/dz_support_bot'>Telegram</Link>
                 </div>
               </div>
             </Box>
             <Box className={cls.apps}>
               <Box sx={{background:'#fff'}} className={cls.app}>
                 <img src={Img} alt="" />
-                <Button sx={{backgroundColor:'#F43F5E','&:active':{background:'#F43F5E'}, '&:hover':{background:'#F43F5E'}}} variant="M" color="primary" startIcon={<AppleIcon/>}>App Store</Button>
+                <Button href="https://apps.apple.com/app/id1558126252" sx={{backgroundColor:'#F43F5E','&:active':{background:'#F43F5E'}, '&:hover':{background:'#F43F5E'}}} variant="M" color="primary" startIcon={<AppleIcon/>}>App Store</Button>
               </Box>
               <Box sx={{background:'#fff'}} className={cls.app}>
                 <img src={Img} alt="" />

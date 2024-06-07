@@ -40,7 +40,7 @@
   height: 570px;
   overflow: visible;
   position: relative;
-  display: flex;
+  display: none;
 
   @media (max-width:1440px) {
     height: calc(((611.585 - 376.607)*(100vw - 414px))/(1440 - 414) + 376.607px);
@@ -80,7 +80,7 @@
 
 
   img {
-    display: block;
+    display: none;
     object-fit: contain;
     position: absolute;
     top: 15px;
@@ -123,6 +123,18 @@
       @media (max-width: 768px) {
         display: block;
         left: 50px;
+      }
+    }
+  }
+  &.loaded{
+    display: flex;
+    img{
+      display: block;
+      &:nth-child(1) {
+        display: none;
+        @media (max-width: 768px) {
+          display: block;
+        }
       }
     }
   }
