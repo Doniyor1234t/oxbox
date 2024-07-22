@@ -295,6 +295,24 @@ function getTheme(mode: PaletteMode): ThemeOptions {
               },
             },
           },
+          {
+            props: { variant: 'secondary' },
+            style: {
+              border: "5px solid #222A39",
+              backgroundColor: "transparent",
+              color: "#222A39",
+              padding: '10px 15px',
+              '&:hover': {
+                backgroundColor: "#fff",
+                color: "#445371",
+              }, 
+              '&:active': {
+                backgroundColor: "#fff",
+                color: "#445371",
+                outline:'none',
+              },
+            },
+          },
         ],
       },
       MuiLink: {
@@ -337,11 +355,13 @@ declare module '@mui/material/Button' {
     l: true; // Define the 'l' variant
     M: true; // Define the 'M' variant
     special: true; // Define the 'special' variant
+    secondary: true;
   }
 
   interface ButtonPropsColorOverrides {
     tertiary: true;
     special: true;
+    secondary: true;
     l: true;
     M: true;
   }

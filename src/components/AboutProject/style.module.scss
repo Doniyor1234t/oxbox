@@ -22,7 +22,7 @@
   position: relative;
   z-index: -1;
 
-  @media (width < 768px) {
+  @media (width < 1440px) {
     // width: 110%;
     margin: 0 -16px;
 
@@ -42,10 +42,12 @@
 
   }
 
+  
+
 
 
   img {
-    @media (width > 768px) {
+    @media (width > 1440px) {
       &:first-child {
         // display: block;
       }

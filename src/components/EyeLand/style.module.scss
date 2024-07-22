@@ -100,7 +100,7 @@
         width: auto;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 1440px) {
         display: block;
         right: 50px;
       }
@@ -159,13 +159,14 @@
     z-index: 2;
   }
 
-  display: block;
+  // display: block;
 
   @media (width < 1440px) {
     width: 171.013px;
     height: 351px;
     top: 490px;
     left: 190px;
+    display: none;
   }
 
   @media (max-width: 768px) {

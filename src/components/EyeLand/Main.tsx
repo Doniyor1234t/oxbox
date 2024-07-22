@@ -82,7 +82,11 @@ const MainLand = () => {
             <Typography variant="h1" component="h1">{t('Main.title')}</Typography>
             <Typography variant="p">{t('Main.subtitle')}</Typography>
           </Box>
-          <Button href="https://oxbox-respondent.udevs.io/home" color="primary" endIcon={<Arrowrightup />}>{t('Main.button')}</Button>
+          <Box sx={{display:'flex', gap:'24px'}}>
+            <Button href="https://oxbox-respondent.udevs.io/home" color="primary" endIcon={<Arrowrightup />}>{t('Main.button')}</Button>
+            {/* <Button variant="secondary" href="https://oxbox-respondent.udevs.io/home" color="primary">{t('Main.surveys')}</Button>
+            <Button variant="secondary" href="https://oxbox-respondent.udevs.io/home" color="primary">{t('Main.blits')}</Button> */}
+          </Box>
           <Button onClick={()=> window.location.href = ('https://onelink.to/ywrr87')} sx={{ 
             backgroundColor:'background.paper', 
             width:'300px', 
@@ -116,7 +120,8 @@ const MainLand = () => {
           <Box className={`${cls.img} ${ isLoadedImg1 && isLoadedImg2 && isLoadedImg3 ? cls.loaded : null }`}>
             <img src={DoubleApp1} alt="App image" onLoad={() => setIsLoadedImg1(true)}/>
             <img src={DoubleApp} alt="App image" onLoad={() => setIsLoadedImg2(true)}/>
-            {(!isLoadedImg1 || !isLoadedImg2 || !isLoadedImg3) && <Skeleton animation="wave" sx={{width:"100%",height:'110%'}} variant="rectangular"/>
+            {
+              (!isLoadedImg1 || !isLoadedImg2 || !isLoadedImg3) && <Skeleton animation="wave" sx={{width:"100%",height:'110%'}} variant="rectangular"/>
             }
           </Box>
           <div ref={imgRef} className={cls.moveImg}>

@@ -21,7 +21,7 @@ const About = () => {
             <Box sx={{backgroundColor:'background.paper'}} className={cls.topContent}>
               
               <Typography variant="h2">{t('About.title')}</Typography>
-              <Typography sx={{margin:'16px 0 20px 0'}} variant="p" color={'text.main'}>
+              <Typography sx={{margin:'16px 0 20px 0', display:"block"}} variant="p" color={'text.main'}>
                 {/* SpeakOut - это онлайн-платформа для заработка на своем мнении. 
                 Мы предлагаем пользователям зарабатывать на своих отзывах о товарах и услугах. */}
                 {t('About.subtitle')}
